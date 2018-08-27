@@ -1,87 +1,89 @@
+只使用一个html元素+css绘制各种图形。
+
 包含的形状：
 
-- 正方形
+- [x] Square 正方形 
 
-- 长方形
+- [x] Rectangle 长方形
 
-- 圆形
+- [x] Circle 圆形
 
-- 椭圆形
+- [x] Oval 椭圆形
 
-- 三角形向上
+- [x] Triangle Up 三角形向上
 
-- 三角形向下
+- [x] Triangle Down 三角形向下
 
-- 三角形向左
+- [x] Triangle Left 三角形向左
 
-- 三角形向右
+- [x] Triangle Right 三角形向右
 
-- 三角形左上角
+- [x] Triangle Top Left 三角形左上角
 
-- 三角形右上角
+- [x] Triangle Top Right 三角形右上角
 
-- 三角形左下角
+- [x] Triangle Bottom Left 三角形左下角
 
-- 三角形右下角
+- [x] Triangle Bottom Right 三角形右下角
 
-- 曲箭头
+- [x] Curved Tail Arrow 曲箭头
 
-- 梯形
+- [x] Trapezoid 梯形
 
-- 平行四边形
+- [x] Parallelogram 平行四边形
 
-- 星形(6点)
+- [x] Star (6-points) 星形(6点)
 
-- 星形(5点)
+- [x] Star (5-points) 星形(5点)
 
-- 五角形
+- [x] Pentagon 五角形
 
-- 六角形
+- [x] Hexagon 六角形
 
-- 八角形
+- [x] Octagon 八角形
 
-- 心形
+- [x] Heart 心形
 
-- 无限形
+- [x] Infinity 无限形
 
-- 菱形
+- [x] Diamond 菱形
 
-- 菱形(窄)
+- [x] Diamond Narrow 菱形(窄)
 
-- 菱形(盾)
+- [x] Diamond Shield 菱形(盾)
 
-- 钻石
+- [x] Diamond 钻石
 
-- 蛋形
+- [x] Egg 蛋形
 
-- 食豆小子
+- [x] Pac-Man 食豆小子
 
-- 谈话泡
+- [x] Talk Bubble 谈话泡
 
-- 爆炸(12点)
+- [x] Burst(12-points) 爆炸(12点)
 
-- 爆炸(8点)
+- [x] Burst(8-points) 爆炸(8点)
 
-- 太极
+- [x] Tai Chi 太极
 
-- 徽章
+- [x] Badge Ribbon 徽章
 
-- 太空侵略者
+- [x] Space Invader 太空侵略者
 
-- TV形
+- [x] TV Screen TV形
 
-- V形臂章
+- [x] Chevron 臂章
 
-- 放大镜
+- [x] Magnifying Glass 放大镜
 
-- 月亮
+- [x] Moon 月亮
 
-- 旗帜
+- [x] Flag 旗帜
 
-- 锥体
+- [x] Cone 锥体
 
-- 十字架
+- [x] Cross 十字架
 
-- 基地
+- [x] Base 基地
 
-- 指针
+- [x] Pointer 指针
