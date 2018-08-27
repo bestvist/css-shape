@@ -2,88 +2,88 @@
 
 包含的形状：
 
-- [x] Square 正方形 
+- [x] 正方形 Square 
 
-- [x] Rectangle 长方形
+- [x] 长方形 Rectangle 
 
-- [x] Circle 圆形
+- [x] 圆形 Circle 
 
-- [x] Oval 椭圆形
+- [x] 椭圆形 Oval 
 
-- [x] Triangle Up 三角形向上
+- [x] 三角形向上 Triangle Up 
 
-- [x] Triangle Down 三角形向下
+- [x] 三角形向下 Triangle Down 
 
-- [x] Triangle Left 三角形向左
+- [x] 三角形向左 Triangle Left 
 
-- [x] Triangle Right 三角形向右
+- [x] 三角形向右 Triangle Right 
 
-- [x] Triangle Top Left 三角形左上角
+- [x] 三角形左上角 Triangle Top Left 
 
-- [x] Triangle Top Right 三角形右上角
+- [x] 三角形右上角 Triangle Top Right 
 
-- [x] Triangle Bottom Left 三角形左下角
+- [x] 三角形左下角 Triangle Bottom Left 
 
-- [x] Triangle Bottom Right 三角形右下角
+- [x] 三角形右下角 Triangle Bottom Right 
 
-- [x] Curved Tail Arrow 曲箭头
+- [x] 曲箭头 Curved Tail Arrow 
 
-- [x] Trapezoid 梯形
+- [x] 梯形 Trapezoid 
 
-- [x] Parallelogram 平行四边形
+- [x] 平行四边形 Parallelogram 
 
-- [x] Star (6-points) 星形(6点)
+- [x] 星形(6点) Star (6-points) 
 
-- [x] Star (5-points) 星形(5点)
+- [x] 星形(5点) Star (5-points) 
 
-- [x] Pentagon 五角形
+- [x] 五角形 Pentagon
 
-- [x] Hexagon 六角形
+- [x] 六角形 Hexagon 
 
-- [x] Octagon 八角形
+- [x] 八角形 Octagon 
 
-- [x] Heart 心形
+- [x] 心形 Heart 
 
-- [x] Infinity 无限形
+- [x] 无限形 Infinity 
 
-- [x] Diamond 菱形
+- [x] 菱形 Diamond 
 
-- [x] Diamond Narrow 菱形(窄)
+- [x] 菱形(窄) Diamond Narrow 
 
-- [x] Diamond Shield 菱形(盾)
+- [x] 菱形(盾) Diamond Shield 
 
-- [x] Diamond 钻石
+- [x] 钻石 Diamond 
 
-- [x] Egg 蛋形
+- [x] 蛋形 Egg 
 
-- [x] Pac-Man 食豆小子
+- [x] 食豆小子 Pac-Man 
 
-- [x] Talk Bubble 谈话泡
+- [x] 谈话泡 Talk Bubble 
 
-- [x] Burst(12-points) 爆炸(12点)
+- [x] 爆炸(12点) Burst(12-points) 
 
-- [x] Burst(8-points) 爆炸(8点)
+- [x] 爆炸(8点) Burst(8-points) 
 
-- [x] Tai Chi 太极
+- [x] 太极 Tai Chi 
 
-- [x] Badge Ribbon 徽章
+- [x] 徽章 Badge Ribbon 
 
-- [x] Space Invader 太空侵略者
+- [x] 太空侵略者 Space Invader 
 
-- [x] TV Screen TV形
+- [x] TV形 TV Screen 
 
-- [x] Chevron 臂章
+- [x] 臂章 Chevron 
 
-- [x] Magnifying Glass 放大镜
+- [x] 放大镜 Magnifying Glass 
 
-- [x] Moon 月亮
+- [x] 月亮 Moon 
 
-- [x] Flag 旗帜
+- [x] 旗帜 Flag 
 
-- [x] Cone 锥体
+- [x] 锥体 Cone 
 
-- [x] Cross 十字架
+- [x] 十字架 Cross 
 
-- [x] Base 基地
+- [x] 基地 Base 
 
-- [x] Pointer 指针
+- [x] 指针 Pointer 
