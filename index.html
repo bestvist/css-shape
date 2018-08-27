@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Shape Of CSS</title>
+</head>
+
+<body>
+    <h3>正方形</h3>
+    <div id="square"></div>
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>长方形</h3>
+    <div id="rectangle"></div>
+    <style>
+        #rectangle {
+            width: 200px;
+            height: 100px;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>圆形</h3>
+    <div id="circle"></div>
+    <style>
+        #circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>椭圆形</h3>
+    <div id="oval"></div>
+    <style>
+        #oval {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>三角形向上</h3>
+    <div id="triangle-up"></div>
+    <style>
+        #triangle-up {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid dodgerblue;
+        }
+    </style>
+
+    <h3>三角形向下</h3>
+    <div id="triangle-down"></div>
+    <style>
+        #triangle-down {
+            width: 0;
+            height: 0;
+            border-top: 100px solid dodgerblue;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+    </style>
+
+    <h3>三角形向左</h3>
+    <div id="triangle-left"></div>
+    <style>
+        #triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-right: 100px solid dodgerblue;
+            border-bottom: 50px solid transparent;
+        }
+    </style>
+
+    <h3>三角形向右</h3>
+    <div id="triangle-right"></div>
+    <style>
+        #triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 100px solid dodgerblue;
+            border-bottom: 50px solid transparent;
+        }
+    </style>
+
+    <h3>三角形左上角</h3>
+    <div id="triangle-topleft"></div>
+    <style>
+        #triangle-topleft {
+            width: 0;
+            height: 0;
+            border-top: 100px solid dodgerblue;
+            border-right: 100px solid transparent;
+        }
+    </style>
+
+    <h3>三角形右上角</h3>
+    <div id="triangle-topright"></div>
+    <style>
+        #triangle-topright {
+            width: 0;
+            height: 0;
+            border-top: 100px solid dodgerblue;
+            border-left: 100px solid transparent;
+        }
+    </style>
+
+    <h3>三角形左下角</h3>
+    <div id="triangle-bottomleft"></div>
+    <style>
+        #triangle-bottomleft {
+            width: 0;
+            height: 0;
+            border-bottom: 100px solid dodgerblue;
+            border-right: 100px solid transparent;
+        }
+    </style>
+
+    <h3>三角形右下角</h3>
+    <div id="triangle-bottomright"></div>
+    <style>
+        #triangle-bottomright {
+            width: 0;
+            height: 0;
+            border-bottom: 100px solid dodgerblue;
+            border-left: 100px solid transparent;
+        }
+    </style>
+
+    <h3>曲箭头</h3>
+    <div id="curvedarrow"></div>
+    <style>
+        #curvedarrow {
+            position: relative;
+            width: 0;
+            height: 0;
+            margin-left: 20px;
+            border-top: 9px solid transparent;
+            border-right: 9px solid dodgerblue;
+            transform: rotate(10deg);
+        }
+
+        #curvedarrow:after {
+            content: "";
+            position: absolute;
+            top: -12px;
+            left: -9px;
+            width: 12px;
+            height: 12px;
+            border: 0 solid transparent;
+            border-top: 3px solid dodgerblue;
+            border-radius: 20px 0 0 0;
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <h3>梯形</h3>
+    <div id="trapezoid"></div>
+    <style>
+        #trapezoid {
+            width: 100px;
+            height: 0;
+            border-bottom: 100px solid dodgerblue;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+    </style>
+
+    <h3>平行四边形</h3>
+    <div id="parallelogram"></div>
+    <style>
+        #parallelogram {
+            width: 150px;
+            height: 100px;
+            margin-left: 20px;
+            transform: skew(20deg);
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>星形(6点)</h3>
+    <div id="star-six"></div>
+    <style>
+        #star-six {
+            position: relative;
+            width: 0;
+            height: 0;
+            margin-bottom: 40px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid dodgerblue;
+        }
+
+        #star-six:after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: -50px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid dodgerblue;
+        }
+    </style>
+
+    <h3>星形(5点)</h3>
+    <div id="star-five"></div>
+    <style>
+        #star-five {
+            display: block;
+            position: relative;
+            width: 0px;
+            height: 0px;
+            margin: 50px 0;
+            border-right: 50px solid transparent;
+            border-bottom: 35px solid dodgerblue;
+            border-left: 50px solid transparent;
+            color: dodgerblue;
+            transform: rotate(35deg);
+        }
+
+        #star-five:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -22.5px;
+            left: -32.5px;
+            height: 0;
+            width: 0;
+            border-bottom: 40px solid dodgerblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            transform: rotate(-35deg);
+        }
+
+        #star-five:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1.5px;
+            left: -52.5px;
+            width: 0px;
+            height: 0px;
+            border-right: 50px solid transparent;
+            border-bottom: 35px solid dodgerblue;
+            border-left: 50px solid transparent;
+            color: dodgerblue;
+            transform: rotate(-70deg);
+        }
+    </style>
+
+    <h3>五角形</h3>
+    <div id="pentagon"></div>
+    <style>
+        #pentagon {
+            position: relative;
+            width: 54px;
+            margin-top: 40px;
+            border-width: 50px 18px 0;
+            border-style: solid;
+            border-color: dodgerblue transparent;
+            box-sizing: content-box;
+        }
+
+        #pentagon:before {
+            content: "";
+            position: absolute;
+            top: -85px;
+            left: -18px;
+            height: 0;
+            width: 0;
+            border-width: 0 45px 35px;
+            border-style: solid;
+            border-color: transparent transparent dodgerblue;
+        }
+    </style>
+
+    <h3>六角形</h3>
+    <div id="hexagon"></div>
+    <style>
+        #hexagon {
+            position: relative;
+            width: 100px;
+            height: 55px;
+            margin: 40px 0;
+            background: dodgerblue;
+        }
+
+        #hexagon:before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 25px solid dodgerblue;
+        }
+
+        #hexagon:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid dodgerblue;
+        }
+    </style>
+
+    <h3>八角形</h3>
+    <div id="octagon"></div>
+    <style>
+        #octagon {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: dodgerblue;
+            box-sizing: content-box;
+        }
+
+        #octagon:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 42px;
+            height: 0;
+            border-bottom: 29px solid dodgerblue;
+            border-left: 29px solid white;
+            border-right: 29px solid white;
+            box-sizing: content-box;
+        }
+
+        #octagon:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 42px;
+            height: 0;
+            border-top: 29px solid dodgerblue;
+            border-left: 29px solid white;
+            border-right: 29px solid white;
+            box-sizing: content-box;
+        }
+    </style>
+
+    <h3>心形</h3>
+    <div id="heart"></div>
+    <style>
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background: dodgerblue;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+
+
+    <h3>无限形</h3>
+    <div id="infinity"></div>
+    <style>
+        #infinity {
+            position: relative;
+            width: 212px;
+            height: 100px;
+        }
+
+        #infinity:before,
+        #infinity:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border: 20px solid dodgerblue;
+            border-radius: 50px 50px 0 50px;
+            transform: rotate(-45deg);
+        }
+
+        #infinity:after {
+            left: auto;
+            right: 0;
+            border-radius: 50px 50px 50px 0;
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <h3>菱形</h3>
+    <div id="diamond"></div>
+    <style>
+        #diamond {
+            position: relative;
+            top: -50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: dodgerblue;
+        }
+
+        #diamond:after {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top-color: dodgerblue;
+        }
+    </style>
+
+    <h3>菱形(窄)</h3>
+    <div id="diamond-narrow"></div>
+    <style>
+        #diamond-narrow {
+            position: relative;
+            top: -50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom: 70px solid dodgerblue;
+        }
+
+        #diamond-narrow:after {
+            content: '';
+            position: absolute;
+            top: 70px;
+            left: -50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid dodgerblue;
+        }
+    </style>
+
+    <h3>菱形(盾)</h3>
+    <div id="diamond-shield"></div>
+    <style>
+        #diamond-shield {
+            position: relative;
+            top: -50px;
+            width: 0;
+            height: 0;
+            margin-bottom: 20px;
+            border: 50px solid transparent;
+            border-bottom: 20px solid dodgerblue;
+        }
+
+        #diamond-shield:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid dodgerblue;
+        }
+    </style>
+
+    <h3>钻石</h3>
+    <div id="cut-diamond"></div>
+    <style>
+        #cut-diamond {
+            position: relative;
+            width: 50px;
+            height: 0;
+            margin: 20px 0 80px 0;
+            border-style: solid;
+            border-color: transparent transparent dodgerblue transparent;
+            border-width: 0 25px 25px 25px;
+        }
+
+        #cut-diamond:after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: -25px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: dodgerblue transparent transparent transparent;
+            border-width: 70px 50px 0 50px;
+        }
+    </style>
+
+    <h3>蛋</h3>
+    <div id="egg"></div>
+    <style>
+        #egg {
+            display: block;
+            width: 120px;
+            height: 150px;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            background-color: dodgerblue;
+        }
+    </style>
+
+    <h3>食豆小子</h3>
+    <div id="pacman"></div>
+    <style>
+        #pacman {
+            width: 0px;
+            height: 0px;
+            border-right: 60px solid transparent;
+            border-top: 60px solid dodgerblue;
+            border-left: 60px solid dodgerblue;
+            border-bottom: 60px solid dodgerblue;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+    </style>
+
+    <h3>谈话泡</h3>
+    <div id="talkbubble"></div>
+    <style>
+        #talkbubble {
+            position: relative;
+            width: 120px;
+            height: 80px;
+            margin-left: 30px;
+            border-radius: 10px;
+            background: dodgerblue;
+        }
+
+        #talkbubble:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 26px;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-right: 26px solid dodgerblue;
+            border-bottom: 13px solid transparent;
+        }
+    </style>
+
+    <h3>爆炸(12点)</h3>
+    <div id="burst-12"></div>
+    <style>
+        #burst-12 {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            text-align: center;
+            background: dodgerblue;
+        }
+
+        #burst-12:before,
+        #burst-12:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 80px;
+            background: dodgerblue;
+        }
+
+        #burst-12:before {
+            transform: rotate(30deg);
+        }
+
+        #burst-12:after {
+            transform: rotate(60deg);
+        }
+    </style>
+
+    <h3>爆炸(8点)</h3>
+    <div id="burst-8"></div>
+    <style>
+        #burst-8 {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            text-align: center;
+            background: dodgerblue;
+            transform: rotate(20deg);
+        }
+
+        #burst-8:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 80px;
+            background: dodgerblue;
+            transform: rotate(135deg);
+        }
+    </style>
+
+    <h3>太极</h3>
+    <div id="yin-yang"></div>
+    <style>
+        #yin-yang {
+            position: relative;
+            width: 96px;
+            height: 48px;
+            background: white;
+            border-width: 2px 2px 50px 2px;
+            border-style: solid;
+            border-color: dodgerblue;
+            border-radius: 100%;
+        }
+
+        #yin-yang:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border: 18px solid dodgerblue;
+            border-radius: 100%;
+            background: white;
+        }
+
+        #yin-yang:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            border: 18px solid white;
+            border-radius: 100%;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>徽章</h3>
+    <div id="badge-ribbon"></div>
+    <style>
+        #badge-ribbon {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 40px;
+            border-radius: 50px;
+            background: dodgerblue;
+        }
+
+        #badge-ribbon:before,
+        #badge-ribbon:after {
+            content: '';
+            position: absolute;
+            top: 70px;
+            left: -10px;
+            border-bottom: 70px solid dodgerblue;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            transform: rotate(-140deg);
+        }
+
+        #badge-ribbon:after {
+            left: auto;
+            right: -10px;
+            transform: rotate(140deg);
+        }
+    </style>
+
+    <h3>太空侵略者</h3>
+    <div id="space-invader"></div>
+    <style>
+        #space-invader {
+            width: 1em;
+            height: 1em;
+            margin: 70px 20px 90px 85px;
+            overflow: hidden;
+            background: dodgerblue;
+            box-shadow: 0 0 0 1em dodgerblue,
+            0 1em 0 1em dodgerblue,
+            -2.5em 1.5em 0 .5em dodgerblue,
+            2.5em 1.5em 0 .5em dodgerblue,
+            -3em -3em 0 0 dodgerblue,
+            3em -3em 0 0 dodgerblue,
+            -2em -2em 0 0 dodgerblue,
+            2em -2em 0 0 dodgerblue,
+            -3em -1em 0 0 dodgerblue,
+            -2em -1em 0 0 dodgerblue,
+            2em -1em 0 0 dodgerblue,
+            3em -1em 0 0 dodgerblue,
+            -4em 0 0 0 dodgerblue,
+            -3em 0 0 0 dodgerblue,
+            3em 0 0 0 dodgerblue,
+            4em 0 0 0 dodgerblue,
+            -5em 1em 0 0 dodgerblue,
+            -4em 1em 0 0 dodgerblue,
+            4em 1em 0 0 dodgerblue,
+            5em 1em 0 0 dodgerblue,
+            -5em 2em 0 0 dodgerblue,
+            5em 2em 0 0 dodgerblue,
+            -5em 3em 0 0 dodgerblue,
+            -3em 3em 0 0 dodgerblue,
+            3em 3em 0 0 dodgerblue,
+            5em 3em 0 0 dodgerblue,
+            -2em 4em 0 0 dodgerblue,
+            -1em 4em 0 0 dodgerblue,
+            1em 4em 0 0 dodgerblue,
+            2em 4em 0 0 dodgerblue;
+        }
+    </style>
+
+    <h3>TV</h3>
+    <div id="tv"></div>
+    <style>
+        #tv {
+            position: relative;
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            text-align: center;
+            text-indent: .1em;
+            background: dodgerblue;
+            border-radius: 50% / 10%;
+            color: white;
+        }
+
+        #tv:before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            right: -5%;
+            left: -5%;
+            border-radius: 5% / 50%;
+            background: inherit;
+        }
+    </style>
+
+    <h3>V形臂章</h3>
+    <div id="chevron"></div>
+    <style>
+        #chevron {
+            position: relative;
+            width: 150px;
+            height: 60px;
+        }
+
+        #chevron:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 51%;
+            height: 100%;
+            background: dodgerblue;
+            transform: skew(0deg, 6deg);
+        }
+
+        #chevron:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: dodgerblue;
+            transform: skew(0deg, -6deg);
+        }
+    </style>
+
+    <h3>放大镜</h3>
+    <div id="magnifying-glass"></div>
+    <style>
+        #magnifying-glass {
+            display: inline-block;
+            position: relative;
+            width: 0.4em;
+            height: 0.4em;
+            border: 0.1em solid dodgerblue;
+            border-radius: 0.35em;
+            font-size: 10em;
+        }
+
+        #magnifying-glass::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: -0.25em;
+            bottom: -0.1em;
+            width: 0.35em;
+            height: 0.08em;
+            border-width: 0;
+            background: dodgerblue;
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <h3>月亮</h3>
+    <div id="moon"></div>
+    <style>
+        #moon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 15px 15px 0 0 dodgerblue;
+        }
+    </style>
+
+    <h3>旗帜</h3>
+    <div id="flag"></div>
+    <style>
+        #flag {
+            position: relative;
+            width: 110px;
+            height: 56px;
+            padding-top: 15px;
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            background: dodgerblue;
+        }
+
+        #flag:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 13px solid white;
+            border-left: 55px solid transparent;
+            border-right: 55px solid transparent;
+        }
+    </style>
+
+    <h3>锥体</h3>
+    <div id="cone"></div>
+    <style>
+        #cone {
+            width: 0;
+            height: 0;
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-top: 100px solid dodgerblue;
+            border-radius: 50%;
+        }
+    </style>
+
+    <h3>十字架</h3>
+    <div id="cross"></div>
+    <style>
+        #cross {
+            position: relative;
+            width: 20px;
+            height: 100px;
+            margin: 0 50px;
+            background: dodgerblue;
+        }
+
+        #cross:after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: -40px;
+            width: 100px;
+            height: 20px;
+            background: dodgerblue;
+        }
+    </style>
+
+    <h3>基地</h3>
+    <div id="base"></div>
+    <style>
+        #base {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 55px;
+            margin-left: 20px;
+            margin-top: 35px;
+            background: dodgerblue;
+        }
+
+        #base:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -35px;
+            left: 0;
+            border-bottom: 35px solid dodgerblue;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+    </style>
+
+    <h3>指针</h3>
+    <div id="pointer"></div>
+    <style>
+        #pointer {
+            position: relative;
+            width: 200px;
+            height: 40px;
+            background: dodgerblue;
+        }
+
+        #pointer:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        #pointer:before {
+            content: "";
+            position: absolute;
+            right: -20px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid dodgerblue;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    </style>
+
+</body>
+
+</html>
